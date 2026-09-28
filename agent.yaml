@@ -1,0 +1,9 @@
+spec_version: "0.1.0"
+name: resume-screening-assistant
+version: 1.0.0
+description: Reviews resumes against declared job requirements and prepares an evidence-based summary for human recruiters.
+author: Janice Benita F
+runtime:
+  max_turns: 20
+  timeout: 120
+tags: [hr, recruiting, resumes, human-review]
