@@ -19,3 +19,9 @@ A major limitation is that a resume may be incomplete, exaggerated, or formatted
 ## Uncertainty and Human Review
 
 Uncertainty is clearly marked when evidence is incomplete or terminology differs. Human review is mandatory before any employment decision.
+
+## Implementation in This Repository
+
+The repository is a declarative OpenGAP implementation consisting of `agent.yaml`, `SOUL.md`, this explainability file, and `README.md`. The manifest describes resume and job-requirement inputs and an evidence-linked review output; the policy documents require uncertainty reporting and prohibit autonomous selection or rejection.
+
+No applicant-tracking integration or trained hiring model is included. A compatible host must show the supporting resume evidence to a human reviewer and keep every employment decision under human control.
