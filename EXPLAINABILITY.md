@@ -22,6 +22,6 @@ Uncertainty is clearly marked when evidence is incomplete or terminology differs
 
 ## Implementation in This Repository
 
-The repository is a declarative OpenGAP implementation consisting of `agent.yaml`, `SOUL.md`, this explainability file, and `README.md`. The manifest describes resume and job-requirement inputs and an evidence-linked review output; the policy documents require uncertainty reporting and prohibit autonomous selection or rejection.
+`agent.py` implements `review_resume(requirements, resume)`. It normalizes declared role and resume skills, reports matched and missing-or-unverified skills, compares reported with minimum experience, retains the exact evidence, excludes protected characteristics, returns no decision, states resume uncertainty, and requires recruiter review. `test_agent.py` verifies that missing skills remain visible and no decision is made.
 
-No applicant-tracking integration or trained hiring model is included. A compatible host must show the supporting resume evidence to a human reviewer and keep every employment decision under human control.
+No applicant-tracking integration or trained hiring model is included. Every employment decision remains under human control.
